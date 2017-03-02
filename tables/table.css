@@ -1,0 +1,39 @@
+/* Universal Styles */
+table {
+    font-family: "Verdana", sans-serif;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+table * {
+    border: 1px solid grey;
+    padding: 10px;
+}
+caption {
+    background-color: #b7b7b7;
+    font-size: .8em;
+}
+
+/* Exercise 1 Styles */
+.ex1 th {
+    background-color: #434343;
+    color: white;
+}
+.ex1 td {
+    color: ##434343;
+}
+.ex1 tr {
+    background-color: #e6e6e6;
+}
+.ex1 tr:nth-of-type(odd) {
+    background-color: #d1d1d1;
+}
+
+/*Exercise 2 Styles */
+.ex2 th {
+    text-align: right;
+}
+.ex2 tr:nth-of-type(4n-3) th:first-of-type {
+    padding: 0 60px;
+    text-align: center;
+    
+}

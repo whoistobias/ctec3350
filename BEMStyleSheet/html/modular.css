@@ -1,0 +1,42 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+body {
+    margin: none;
+    padding: none;
+}
+
+.bio-container {
+    height: 200px;
+    margin: 20px;
+    border: 1px solid grey;
+}
+
+.bio-pic {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #efefef;
+}
+
+.bio-title {
+    margin: 10px;
+    color: grey;
+}
+
+.bio-description {
+    margin: 10px;
+    color: grey;
+}
+
+.bio-description-container {
+    margin-left: 200px;
+}
