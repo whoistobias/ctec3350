@@ -2,7 +2,7 @@
 table {
     font-family: "Verdana", sans-serif;
     border-collapse: collapse;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
 }
 table * {
     border: 1px solid grey;
