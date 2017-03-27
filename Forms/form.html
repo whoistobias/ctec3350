@@ -1,0 +1,93 @@
+<!doctype html>
+
+<head>
+    <title>Form Exercise</title>
+    <meta charset="utf-8">
+    <meta name="viewport" initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <form method="get" action="" name="register" class="container">
+            <ul class="flex-outer">
+                <li>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username"/>
+                </li>
+                <li>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="icancode@nerds.com"/>
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password"/>
+                </li>
+                <li>
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm Password"/>
+                </li>
+                <li>
+                    <label for="favoriteday">Favorite Day of the Week</label>
+                    <select name="favoriteday" id="favoriteday">
+                        <option value="sunday">Sunday</option>
+                        <option value="monday">Monday (hah!)</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="friday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="socialmedia">Social Media Used</label>
+                    <ul class="flex-inner">
+                        <li>
+                            <label><input type="checkbox" name="socialmedia" id="socialmedia" value="instagram"/>Instagram</label>
+                        </li>
+                        <li>    
+                            <label><input type="checkbox" name="socialmedia" id="socialmedia" value="facebook"/>Facebook</label>
+                        </li>
+                        <li>    
+                            <label><input type="checkbox" name="socialmedia" id="socialmedia" value="twitter"/>Twitter</label>
+                        </li>
+                        <li>    
+                            <label><input type="checkbox" name="socialmedia" id="socialmedia" value="myspace"/>Myspace</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
+                </li>
+                <li>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name"/>
+                </li>
+                <li>
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address"/>
+                </li>
+                <li>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="City"/>
+                </li>
+                <li>
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state" placeholder="State"/>
+                </li>
+                <li>
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip" id="zip" placeholder="Zip"/>
+                </li>
+                <li>
+                    <label for="comments">Additional Comments</label>
+                    <textarea name="comments" id="comments" placeholder="Comment here!" maxlength="10000"></textarea>
+                </li>
+                <li>
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
