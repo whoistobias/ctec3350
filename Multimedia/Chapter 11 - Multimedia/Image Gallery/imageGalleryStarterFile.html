@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery | Tobias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <style>
+        * {
+            margin: none;
+            padding: none;
+        }
+        .container {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: flex-start;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .thumbnails {
+            height: 100px;
+            background-color: blue;
+            flex: 1 100px;
+        }
+        .fullsize {
+            height: 100px;
+            background-color: green;
+            flex: 1 100px;
+        }
+    </style>
+  </head>
+  <body>
+      <h1>Image Gallery</h1>
+      <div class="container">
+          <div class="thumbnails">
+              <ul>
+    <!--
+                  <li>
+                      <img>
+                  </li>
+    -->
+              </ul>
+          </div>
+          <div class="fullsize">
+
+          </div>
+      </div>
+  </body>
+</html>

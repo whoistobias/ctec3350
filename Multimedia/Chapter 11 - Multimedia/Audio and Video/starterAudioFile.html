@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Audio Multimedia | CCucalon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="">
+    <style>
+        html {
+            background-color: black;
+        }
+        html:not(:active) {
+            -webkit-animation-direction: normal;
+            -webkit-animation-duration: .3s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-name: colours;
+        }
+        @-webkit-keyframes colours {
+              0% {background-color: #39f;}
+             15% {background-color: #6de6ff;}
+             30% {background-color: #f0ff3d;}
+             45% {background-color: #c1ff48;}
+             60% {background-color: #ff5efd;}
+             75% {background-color: #eb2500;}
+             90% {background-color: #ffdc3d;}
+            100% {background-color: #39f;}
+        }
+        body:hover {
+            
+        }
+        audio { 
+            width: 100px;
+        }
+        audio:hover {
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <audio controls="controls" title="Background Music">
+        <source src="media/Invisible.mp3" type="audio/mpeg">
+        <source src="media/Invisible.ogg" type="audio/ogg">
+        <a href="media/Invisible.mp3">Download</a>
+        (MP3)
+    </audio>
+    <video controls="controls" poster="media/TechnologyPoster.jpg" width="650" height="400" title="People are afraid of Technology">
+      <source src="media/AfraidOfTechnology.mp4" type="video/mp4">
+      <source src="media/AfraidOfTechnology.ogv" type="video/ogg">
+      <a href="media/AfraidOfTechnology.mp4">People are afraid of Technology</a> (.mov)
+    </video>
+</body>
+
+</html>
