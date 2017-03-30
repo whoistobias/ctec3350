@@ -69,7 +69,7 @@ img.img-responsive {
 /* BIO COMPONENT */
 
 .bio {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     max-width: 700px;
 }
 
@@ -109,7 +109,35 @@ img.img-responsive {
     padding: 2.5%;
 }
 
-@media screen and (max-width: 30em) {}
+.bio.right .bio-pic {
+    order: 4;
+}
+
+.bio.stacked .bio-container {
+    flex-flow: column;
+}
+.bio.stacked-reverse .bio-container {
+    flex-flow: column;
+}
+.bio.stacked-reverse .bio-pic {
+    order: 4;
+}
+
+
+@media screen and (max-width: 30em) {
+    .bio-container { 
+        flex-direction: column;
+    }
+    .bio.right .bio-pic {
+        order: 2;
+    }
+    .bio.stacked-reverse .bio-description {
+        order: 4;
+    }
+    .bio-description {
+        order: 3;
+    }
+}
 
 @media screen and (min-width:30.01em) and (max-width: 48em) {
     .bio-container {
