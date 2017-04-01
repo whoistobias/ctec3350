@@ -1,0 +1,53 @@
+/*
+Modular scale font sizes
+3.375em
+2.25em
+1.5em
+1em
+0.667em
+0.444em
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    color: #2c2c2c;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.375em;
+    font-weight: 300;
+}
+
+body {
+    width: 85%;
+    margin: auto;
+    max-width: 1000px;
+    background-color: #f7f7f7;
+}
+
+
+.flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+#content {
+    flex: 3 1 300px;
+    margin: 0 10px 0 0;
+    padding: 10px;
+}
+
+#sidebar {
+    flex: 1 0 15em;
+    margin: 0 10px 0 0px;
+    padding: 10px;
+}
