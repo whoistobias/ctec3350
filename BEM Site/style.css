@@ -16,11 +16,21 @@ Modular scale font sizes
     box-sizing: border-box;
 }
 
+code {
+    font-family: monospace;
+}
+p {
+    font-size: 1;
+}
+
 h3 {
     font-size: 1.5em;
     font-weight: 700;
 }
-
+h2 {
+    font-size: 2.25em;
+    font-weight: 300;
+}
 h1 {
     font-size: 3.375em;
     font-weight: 300;
@@ -29,7 +39,6 @@ h1 {
 body {
     width: 85%;
     margin: auto;
-    max-width: 1000px;
     background-color: #f7f7f7;
 }
 
@@ -41,13 +50,32 @@ body {
 }
 
 #content {
-    flex: 3 1 300px;
+    flex: 1 1 300px;
+    width: 66%;
     margin: 0 10px 0 0;
     padding: 10px;
 }
 
-#sidebar {
-    flex: 1 0 15em;
-    margin: 0 10px 0 0px;
+#sidespace {
+    flex: 0 0 15em;
+    margin: 0 0px 0 10px;
+}
+#nav {
+    position: fixed;
+    width: 15em;
+    right: 7.5%;
     padding: 10px;
+}
+
+.codebox code {
+    background-color: #d3d3d3;
+    font-size: 1em;
+    overflow: scroll;
+    display: block;
+    padding: 2px;
+    color: #535353;
+    border-radius: .5em;
+    border: 1.5em solid #d3d3d3;
+    white-space: pre;
+    font-family: "Cutive Mono", sans-serif;
 }

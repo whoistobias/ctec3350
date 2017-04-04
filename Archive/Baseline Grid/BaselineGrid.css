@@ -28,6 +28,7 @@ p {
     font-family: serif;
     font-size: 1em;
     line-height: 1.25em;
+    margin: -.15em 0 .15em;
 }
 q {
     font-style: italic;
