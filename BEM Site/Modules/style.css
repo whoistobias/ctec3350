@@ -1,0 +1,49 @@
+/*
+modular scale font sizes     
+2.369em
+1.777em
+1.333em
+1em
+0.75em
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    font-size: 3.157rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.369rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.777rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.333rem;
+    font-weight: 300;
+}
+
+
