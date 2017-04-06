@@ -1,11 +1,11 @@
 /*
-Modular scale font sizes
-3.375em
-2.25em
-1.5em
+modular scale font sizes     
+3.157
+2.369em
+1.777em
+1.333em
 1em
-0.667em
-0.444em
+0.75em
 */
 
 * {
@@ -19,22 +19,6 @@ Modular scale font sizes
 code {
     font-family: monospace;
 }
-p {
-    font-size: 1;
-}
-
-h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-h2 {
-    font-size: 2.25em;
-    font-weight: 300;
-}
-h1 {
-    font-size: 3.375em;
-    font-weight: 300;
-}
 
 body {
     width: 85%;
@@ -42,6 +26,9 @@ body {
     background-color: #f7f7f7;
 }
 
+header h1 {
+    font-weight: 300;
+}
 
 .flexbox {
     display: flex;
@@ -60,6 +47,7 @@ body {
     flex: 0 0 15em;
     margin: 0 0px 0 10px;
 }
+
 #nav {
     position: fixed;
     width: 15em;
@@ -74,8 +62,182 @@ body {
     display: block;
     padding: 2px;
     color: #535353;
-    border-radius: .5em;
+    border-radius: 0 0 .5em .5em;
     border: 1.5em solid #d3d3d3;
     white-space: pre;
     font-family: "Cutive Mono", sans-serif;
+}
+
+.section {
+    margin-bottom: 3em;
+}
+
+.section>h2 {
+    margin-bottom: .25em;
+}
+
+.example {
+    border: 2px solid #d3d3d3;
+    border-radius: .5em .5em 0 0;
+    overflow: scroll;
+}
+
+.example td {
+    padding: 4px 20px;
+    vertical-align: bottom;
+}
+
+.example hr {
+    margin: 0 2em;
+}
+
+.example table {
+    width: 100%;
+}
+
+.example table td:nth-of-type(2) {
+    text-align: right;
+}
+
+
+/*Module CSS*/
+
+
+/*Banner Module*/
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: #fafafa url("modules/assets/coffeeshop.jpeg") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info {
+    flex: 0 auto;
+    height: auto;
+}
+
+.banner-info h2 {
+    color: #fafafa;
+}
+
+
+/*Button Module*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #3a3a3a;
+}
+
+.button-container {
+    flex: 0 auto;
+    margin: 1em;
+    padding: 15px;
+    border: 2px solid #fafafa;
+}
+
+.button-container h3 {
+    color: #fafafa;
+}
+
+
+/* Contact Module */
+
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: #3b3b3b;
+}
+
+.contact h4,
+.contact p,
+.contact h3 {
+    color: #fafafa;
+}
+
+.contact>div {
+    flex: 0 20em;
+    margin: 30px;
+}
+
+.contact-hours {
+    text-align: right;
+}
+
+.contact-social {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.contact-social img {
+    flex: 1 auto;
+    height: 50px;
+}
+
+
+/* Events Module */
+
+.events {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #171717;
+}
+
+.events h2,
+.events h3,
+.events h4,
+.events p {
+    color: #f7f7f7;
+}
+
+.events-left {
+    flex: 1 40%;
+    background: #fafafa url("modules/assets/audio.jpg") right center/cover;
+    color: #f7f7f7;
+    text-align: right;
+    padding: 30px;
+}
+
+.events-right {
+    flex: 1 40%;
+    padding: 30px;
+}
+
+.events-right-item {
+    margin-bottom: 30px;
+}
+
+
+/* Events Module */
+
+.philosophy {
+    padding: 3.157em;
+    background-color: #FAFAFA;
+}
+
+.philosophy h2,
+.philosophy p {
+    color: #171717;
+}
+
+.philosophy-tag h2 {
+    display: inline;
+    vertical-align: -50%;
+}
+
+.philosophy-tag img {
+    height: 5.61em;
+    display: inline;
+    vertical-align: middle;
+}
+
+.philosophy-text {
+    margin: 2em 0;
+    width: 66%;
+    line-height: 1.777em;
 }

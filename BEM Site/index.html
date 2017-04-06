@@ -1,66 +1,427 @@
 <!doctype html>
 <html>
     <head>
-        <title>BEM | Tobias</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-        <header>
-            <h1><strong>BEM</strong>ASSIGNMENT</h1>
-        </header>
-        <main>
-            <div id="nav">
-                <h3>Table of Contents</h3>
-                <br>
-                <a>Initial Set-up</a>
-                <br>
-                <br>
-                <a>Font Family</a>
-            </div>
-            <div class="flexbox">
-                <div id="content">
-                    <div class="section">
-                        <h2>First Module</h2>
-                        <div class="codebox">
-                            <code>quo arbitrantur. Voluptate summis offendit iudicem. Excepteur iis magna. 
-Mandaremus id lorem. Offendit ab expetendis, nescius minim aute an quis quo aut 
-quorum philosophari, legam ne aliquip hic dolore nam 
+    <title>BEM | Tobias</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Modules/style.css">
+</head>
 
-officia ab enim eiusmod id 
-
-
-expetendis quid summis qui culpa, multos nostrud ita fore illum, a officia aut 
-singulis. Ut culpa illustriora ut sed labore praetermissum ne fabulas a 
-singulis, ad aut enim nostrud, tamen efflorescere iudicem quae mentitum in 
-doctrina nulla hic possumus firmissimum ne id a eruditionem, enim consectetur 
-quibusdam nulla singulis.
-
-t culpa illustriora ut sed labore praetermissum ne fabulas a 
-singulis, ad aut enim nostrud, tamen efflorescere iudicem quae mentitum in 
-doctrina nulla hic pos
-
-t culpa illustriora ut sed labore praetermissum ne fabulas a 
-singulis, ad aut enim nostrud, tamen efflorescere iudicem quae mentitum in 
-doctrina nulla hic pos
-
-t culpa illustriora ut sed labore praetermissum ne fabulas a 
-singulis, ad aut enim nostrud, tamen efflorescere iudicem quae mentitum in 
-doctrina nulla hic pos
-                            </code>
-                        </div>
+<body>
+    <header>
+        <h1><strong>BEM</strong>ASSIGNMENT</h1>
+    </header>
+    <main>
+        <div id="nav">
+            <h3>Table of Contents</h3>
+            <br>
+            <a href="#typography">Typeography</a>
+            <br>
+            <br>
+            <a href="#banner">Banner Module</a>
+            <br>
+            <br>
+            <a href="#button">Button Module</a>
+            <br>
+            <br>
+            <a href="#contact">Contact Module</a>
+            <br>
+            <br>
+            <a href="#events">Events Module</a>
+            <br>
+            <br>
+            <a href="#philosophy">Philosophy Module</a>
+        </div>
+        <div class="flexbox">
+            <div id="content">
+                <div class="section" id="typography">
+                    <h2>Typography</h2>
+                    <div class="example">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h1>H1 Heading</h1>
+                                </td>
+                                <td>
+                                    <p>3.157 em</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>H2 Heading</h2>
+                                </td>
+                                <td>
+                                    <p>2.369em</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>H3 Heading</h3>
+                                </td>
+                                <td>
+                                    <p>1.777em</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>H4 Heading</h4>
+                                </td>
+                                <td>
+                                    <p>1em</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Paragraph</p>
+                                </td>
+                                <td>
+                                    <p>1.333em</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="codebox">
+                        <code>
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;p&gt;Paragraph&lt;/p&gt;
+                                </code>
                     </div>
                 </div>
-                <div id="sidespace">
+                <div class="section" id="banner">
+                    <h2>Banner Module</h2>
+                    <div class="example">
+                        <div class="banner">
+                            <div class="banner-info">
+                                <h2>OPEN MIC NIGHT TUESDAYS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codebox">
+                        <code>
+&lt;!--HTML--&gt;
+
+&lt;div class="banner"&gt;
+    &lt;div class="banner-info"&gt;
+        &lt;h2&gt;OPEN MIC NIGHT TUESDAYS&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+          
+                            
+/* CSS */
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: #fafafa url("assets/coffeeshop.jpeg") center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        
+.banner-info {
+    flex: 0 auto;
+    height: auto;
+}
+        
+.banner-info h2 {
+    color: #fafafa;
+}
+                        </code>
+                    </div>
+                </div>
+                <div class="section" id="button">
+                    <h2>Button Module</h2>
+                    <div class="example">
+                        <div class="button">
+                            <div class="button-container">
+                                <h3>SIGN UP</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codebox">
+                        <code>
+&lt;!--HTML--&gt;
+                            
+&lt;div class="button"&gt;
+    &lt;div class="button-container"&gt;
+        &lt;h3&gt;SIGN UP&lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            
+/* CSS */
+                            
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #3a3a3a;
+}
+
+.button-container {
+    flex: 0 auto;
+    margin: 1em;
+    padding: 15px;
+    border: 2px solid #fafafa;
+}
+
+.button-container h3 {
+    color: #fafafa;
+}
+                        </code>
+                    </div>
+                </div>
+                <div class="section" id="contact">
+                    <h2>Contact Module</h2>
+                    <div class="example">
+                        <div class="contact">
+                            <div class="contact-hours">
+                                <h3>Hours</h3>
+                                <h4>
+                                    mon 8a - 10p<br> tue 8a - 10p<br> wed 8a - 10p<br> thu 8a - 10p<br> fri 8a - 11p<br> sat 8a - 12a<br> sun 9a - 10p
+                                </h4>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Get in touch!</h3>
+                                <p>
+                                    javajam@jam.com<br> 817.999.9999
+                                    <br><br> 201 College St.<br> Arlington, TX 76013
+                                </p>
+                            </div>
+                            <div class="contact-social">
+                                <img src="modules/assets/icon-instagram.svg">
+                                <img src="modules/assets/icon-twitter.svg">
+                                <img src="modules/assets/icon-facebook.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codebox">
+                        <code>
+&lt;!-- HTML --&gt;
+                            
+&lt;div class="contact"&gt;
+    &lt;div class="contact-hours"&gt;
+        &lt;h3&gt;Hours&lt;/h3&gt;
+        &lt;h4&gt;
+            mon 8a - 10p&lt;br&gt; tue 8a - 10p&lt;br&gt; wed 8a - 10p&lt;br&gt; thu 8a - 10p&lt;br&gt; fri 8a - 11p&lt;br&gt; sat 8a - 12a&lt;br&gt; sun 9a - 10p
+        &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="contact-info"&gt;
+        &lt;h3&gt;Get in touch!&lt;/h3&gt;
+        &lt;p&gt;
+            javajam@jam.com&lt;br&gt; 817.999.9999
+            &lt;br&gt;&lt;br&gt; 201 College St.&lt;br&gt; Arlington, TX 76013
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="contact-social"&gt;
+        &lt;img src="modules/assets/icon-instagram.svg"&gt;
+        &lt;img src="modules/assets/icon-twitter.svg"&gt;
+        &lt;img src="modules/assets/icon-facebook.svg"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+/* CSS */
+
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: #3b3b3b;
+    color: white;
+}
+.contact>div {
+    flex: 0 20em;
+    margin: 30px;
+}
+.contact-hours {
+    text-align: right;
+}
+.contact-social {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-social img {
+    flex: 1 auto;
+    height: 50px;
+}
+                        </code>
+                    </div>
+                </div>
+                <div class="section" id="events">
+                    <h2>Events Module</h2>
+                    <div class="example">
+                        <div class="events">
+                            <div class="events-left">
+                                <h2>UPCOMING EVENTS</h2>
+                            </div>
+                            <div class="events-right">
+                                <div class="events-right-item">
+                                    <h3>MIKE MAINS AND THE BRANCHES</h3>
+                                    <h4>June 27th</h4>
+                                    <p>Commodo eram o laboris exercitation. Sint vidisse an aute aliqua. Ad quorum incurreret pariatur. Veniam nam nam dolor aliquip.</p>
+                                </div>
+                                <div class="events-right-item">
+                                    <h3>MIKE MAINS AND THE BRANCHES</h3>
+                                    <h4>June 27th</h4>
+                                    <p>Commodo eram o laboris exercitation. Sint vidisse an aute aliqua. Ad quorum incurreret pariatur. Veniam nam nam dolor aliquip.</p>
+                                </div>
+                                <div class="events-right-item">
+                                    <h3>MIKE MAINS AND THE BRANCHES</h3>
+                                    <h4>June 27th</h4>
+                                    <p>Commodo eram o laboris exercitation. Sint vidisse an aute aliqua. Ad quorum incurreret pariatur. Veniam nam nam dolor aliquip.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codebox">
+                        <code>
+&lt;!-- HTML --&gt;
+
+&lt;div class="events"&gt;
+    &lt;div class="events-left"&gt;
+        &lt;h2&gt;UPCOMING EVENTS&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="events-right"&gt;
+        &lt;div class="events-right-item"&gt;
+            &lt;h3&gt;MIKE MAINS AND THE BRANCHES&lt;/h3&gt;
+            &lt;h4&gt;June 27th&lt;/h4&gt;
+            &lt;p&gt;Commodo eram o laboris exercitation. Sint vidisse an aute aliqua. Ad quorum incurreret pariatur. Veniam nam nam dolor aliquip.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="events-right-item"&gt;
+            &lt;h3&gt;MIKE MAINS AND THE BRANCHES&lt;/h3&gt;
+            &lt;h4&gt;June 27th&lt;/h4&gt;
+            &lt;p&gt;Commodo eram o laboris exercitation. Sint vidisse an aute aliqua. Ad quorum incurreret pariatur. Veniam nam nam dolor aliquip.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="events-right-item"&gt;
+            &lt;h3&gt;MIKE MAINS AND THE BRANCHES&lt;/h3&gt;
+            &lt;h4&gt;June 27th&lt;/h4&gt;
+            &lt;p&gt;Commodo eram o laboris exercitation. Sint vidisse an aute aliqua. Ad quorum incurreret pariatur. Veniam nam nam dolor aliquip.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+/* CSS */
+                            
+.events {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #171717;
+}
+
+.events h2, .events h3, .events h4, .events p {
+    color: #f7f7f7;
+}
+
+.events-left {
+    flex: 1 40%;
+    background: #fafafa url("modules/assets/audio.jpg") right center/cover;
+    color: #f7f7f7;
+    text-align: right;
+    padding: 30px;
+}
+
+.events-right {
+    flex: 1 40%;
+    padding: 30px;
+}
+
+.events-right-item {
+    margin-bottom: 30px;
+}
+                        </code>
+                    </div>
+                </div>
+                <div class="section" id="philosophy">
+                    <h2>Philosophy Module</h2>
+                    <div class="example">
+                        <div class="philosophy">
+                            <div class="philosophy-tag">
+                                <h2>What is</h2><img src="modules/assets/JavaJam.svg">
+                                <h2>?</h2>
+                            </div>
+                            <div class="philosophy-text">
+                                <p>Sed duis adipisicing, quae pariatur hic quem anim, quis nescius se consequat, quem est commodo eu esse ex vidisse, in irure graviterque non mandaremus legam nam quibusdam concursionibus ita arbitror quis singulis. Anim iudicem concursionibus. Illum praetermissum vidisse cillum tempor. Culpa singulis si coniunctione, mentitum culpa ex laborum fidelissimae.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codebox">
+                        <code>
+&lt;!-- HTML --&gt;
+
+&lt;div class="philosophy"&gt;
+    &lt;div class="philosophy-tag"&gt;
+        &lt;h2&gt;What is&lt;/h2&gt;&lt;img src="modules/assets/JavaJam.svg"&gt;
+        &lt;h2&gt;?&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="philosophy-text"&gt;
+        &lt;p&gt;Sed duis adipisicing, quae pariatur hic quem anim, quis nescius se consequat, quem est commodo eu esse ex vidisse, in irure graviterque non mandaremus legam nam quibusdam concursionibus ita arbitror quis singulis. Anim iudicem concursionibus. Illum praetermissum vidisse cillum tempor. Culpa singulis si coniunctione, mentitum culpa ex laborum fidelissimae.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+/* CSS */
+
+.philosophy {
+    padding: 3.157em;
+    background-color: #FAFAFA;
+}
+
+.philosophy h2,
+.philosophy p {
+    color: #171717;
+}
+
+.philosophy-tag h2 {
+    display: inline;
+    vertical-align: -50%;
+}
+
+.philosophy-tag img {
+    height: 5.61em;
+    display: inline;
+    vertical-align: middle;
+}
+
+.philosophy-text {
+    margin: 2em 0;
+    width: 66%;
+    line-height: 1.777em;
+}
+                        </code>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
+            <div id="sidespace">
+            </div>
+        </div>
+    </main>
+</body>
 </html>
 
