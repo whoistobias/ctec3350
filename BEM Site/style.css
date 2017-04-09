@@ -16,8 +16,35 @@ modular scale font sizes
     box-sizing: border-box;
 }
 
-code {
-    font-family: monospace;
+html {
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3.157rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.369rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.777rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.333rem;
+    font-weight: 300;
 }
 
 body {
@@ -37,27 +64,27 @@ header h1 {
 }
 
 #content {
-    flex: 1 1 300px;
-    width: 66%;
+    flex: 1 1 66%;
+    max-width: 66%;
     margin: 0 10px 0 0;
     padding: 10px;
 }
 
 #sidespace {
-    flex: 0 0 15em;
-    margin: 0 0px 0 10px;
+    flex: 0 0 30%;
+    margin: 0 0 0 10px;
 }
 
 #nav {
     position: fixed;
-    width: 15em;
+    width: 25%;
     right: 7.5%;
     padding: 10px;
 }
 
 .codebox code {
     background-color: #d3d3d3;
-    font-size: 1em;
+    font-size: 16px;
     overflow: scroll;
     display: block;
     padding: 2px;
@@ -80,6 +107,7 @@ header h1 {
     border: 2px solid #d3d3d3;
     border-radius: .5em .5em 0 0;
     overflow: scroll;
+    background-color: rgba(126, 126, 126, 0.1);
 }
 
 .example td {
@@ -99,6 +127,38 @@ header h1 {
     text-align: right;
 }
 
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+    #nav {
+        position: inherit;
+        width: 100%;
+    }
+    #content {
+        flex: 1 1 85%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:700px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:900px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    html {
+        font-size: 16px;
+    }
+}
+
 
 /*Module CSS*/
 
@@ -106,9 +166,9 @@ header h1 {
 /*Banner Module*/
 
 .banner {
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
-    background: #fafafa url("modules/assets/coffeeshop.jpeg") center/cover;
+    background: #fafafa url("../modules/assets/coffeeshop.jpeg") center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +177,9 @@ header h1 {
 .banner-info {
     flex: 0 auto;
     height: auto;
+    background-color: rgba(23, 23, 23, 0.25);
+    padding: 2em;
+    text-align: center;
 }
 
 .banner-info h2 {
@@ -129,13 +192,12 @@ header h1 {
 .button {
     display: flex;
     justify-content: center;
-    background-color: #3a3a3a;
 }
 
 .button-container {
     flex: 0 auto;
     margin: 1em;
-    padding: 15px;
+    padding: 8px 15px;
     border: 2px solid #fafafa;
 }
 
@@ -148,7 +210,7 @@ header h1 {
 
 .contact {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     background-color: #3b3b3b;
 }
@@ -160,12 +222,9 @@ header h1 {
 }
 
 .contact>div {
-    flex: 0 20em;
+    flex: 1 150px;
     margin: 30px;
-}
-
-.contact-hours {
-    text-align: right;
+    text-align: center;
 }
 
 .contact-social {
@@ -196,16 +255,16 @@ header h1 {
 }
 
 .events-left {
-    flex: 1 40%;
-    background: #fafafa url("modules/assets/audio.jpg") right center/cover;
+    flex: 1 0 50px;
+    background: #fafafa url("../modules/assets/audio.jpg") right center/cover;
     color: #f7f7f7;
     text-align: right;
     padding: 30px;
 }
 
 .events-right {
-    flex: 1 40%;
-    padding: 30px;
+    flex: 1 0 50px;
+    padding: 15px;
 }
 
 .events-right-item {
@@ -234,6 +293,10 @@ header h1 {
     height: 5.61em;
     display: inline;
     vertical-align: middle;
+}
+
+.philosophy-tag span {
+    white-space: nowrap;
 }
 
 .philosophy-text {
