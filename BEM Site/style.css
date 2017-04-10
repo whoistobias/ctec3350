@@ -210,6 +210,18 @@ header h1 {
     color: #fafafa;
 }
 
+.button-info {
+    flex: 0 auto;
+    height: auto;
+    background-color: rgba(23, 23, 23, 0.25);
+    padding: 2em;
+    text-align: center;
+}
+
+.button-info * {
+    color: #fafafa;
+}
+
 
 /* Contact Module */
 
