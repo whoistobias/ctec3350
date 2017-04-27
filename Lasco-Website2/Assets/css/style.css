@@ -12,6 +12,7 @@ html {
    font-family: "Lato", sans-serif;
    box-sizing: border-box;
    font-size: 16px;
+   transition: font-size 0.5s;
 }
 
 h1 {
@@ -60,7 +61,6 @@ header {
    justify-content: space-between;
    background-color: rgba(23, 23, 23, 0.2);
 }
-
 .nav {
    display: flex;
    flex-flow: row nowrap;
@@ -107,6 +107,7 @@ footer h4 {
    display: flex;
    justify-content: center;
    align-items: center;
+   background-attachment: fixed;
 }
 
 .banner.events {
@@ -130,6 +131,7 @@ footer h4 {
    background-color: rgba(23, 23, 23, 0.25);
    padding: 2em;
    text-align: center;
+   
 }
 
 .banner-info h2 {
@@ -287,6 +289,13 @@ footer h4 {
    flex-flow: row nowrap;
    align-items: center;
    justify-content: space-between;
+}
+
+.drink-item-img {
+   width: 5em;
+   height: 5em;
+   float: left;
+   margin-right: .5rem;
 }
 
 
