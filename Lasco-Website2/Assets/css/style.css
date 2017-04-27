@@ -184,7 +184,7 @@ footer h4 {
 }
 
 .contact>div {
-   flex: 1 150px;
+   flex: 1 85px;
    margin: 30px;
    text-align: center;
 }
@@ -198,7 +198,8 @@ footer h4 {
 
 .contact-social img {
    flex: 1 auto;
-   height: 50px;
+   height: 3rem;
+   margin: 10px;
 }
 
 
