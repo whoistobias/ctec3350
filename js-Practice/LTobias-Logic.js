@@ -12,7 +12,21 @@
    
 */
 
-var welcome = "Hey nerd! Come on in and get REKT!";
-alert(welcome);
+//var value1 = "apples";
+//var value2 = "bananas";
+//
+//console.log(value1 + " is less than " + value2 + "? " + (value1 < value2));
+//
+//console.log(value1 + " is less than or equal to " + value2 + "? " + (value1 <= value2));
+//
+//console.log(value1 + " is greater than " + value2 + "? " + (value1 > value2));
+//
+//console.log(value1 + " is greater than or equal to " + value2 + "? " + (value1 >= value2));
 
-console.log();
+var question = "What is Superman's real name?";
+var answer = prompt(question);
+alert("You answered " + answer);
+
+
+
+

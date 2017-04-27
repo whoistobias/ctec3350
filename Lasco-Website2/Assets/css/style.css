@@ -1,0 +1,365 @@
+/*Basic CSS===============================*/
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Lato", sans-serif;
+   color: #2c2c2c;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: "Lato", sans-serif;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+h1 {
+   font-size: 3.157rem;
+   font-weight: 700;
+}
+
+h2 {
+   font-size: 2.369rem;
+   font-weight: 700;
+}
+
+h3 {
+   font-size: 1.777rem;
+   font-weight: 300;
+}
+
+h4 {
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+p {
+   font-size: 1.333rem;
+   font-weight: 300;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+
+/*========================================*/
+
+
+/*Page CSS================================*/
+
+header {
+   position: fixed;
+   display: flex;
+   flex-flow: row nowrap;
+   height: 7rem;
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgba(23, 23, 23, 0.2);
+}
+
+.nav {
+   display: flex;
+   flex-flow: row nowrap;
+   list-style-type: none;
+}
+
+.nav li {
+   flex 1 100px;
+   margin: 1rem 2rem 0;
+   color: #f7f7f7;
+   font-weight: 300;
+   font-size: 1.333rem;
+}
+
+.logo img {
+   height: 5rem;
+   margin-left: 2rem;
+}
+
+footer {
+   display: flex;
+   flex-flow: row nowrap;
+   min-height: 2.369rem;
+   background-color: #171717;
+   justify-content: center;
+}
+
+footer h4 {
+   align-self: center;
+   color: #f7f7f7;
+   font-weight: 300;
+}
+
+
+/*Module CSS==============================*/
+
+
+/*Banner Module*/
+
+.banner {
+   max-width: 100%;
+   height: 100vh;
+   background: #fafafa url("../img/coffeeshop.jpeg") center/cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.banner.events {
+   height: 50vh;
+   background: #fafafa url("../img/vintagemic.jpg") center/cover;
+}
+
+.banner.coffee {
+   height: 50vh;
+   background: #fafafa url("../img/latte.jpeg") center/cover;
+}
+
+.banner.info {
+   height: 50vh;
+   background: #fafafa url("../img/pen.jpeg") center/cover;
+}
+
+.banner-info {
+   flex: 0 auto;
+   height: auto;
+   background-color: rgba(23, 23, 23, 0.25);
+   padding: 2em;
+   text-align: center;
+}
+
+.banner-info h2 {
+   color: #fafafa;
+}
+
+
+/*Button Module*/
+
+.button {
+   display: flex;
+   justify-content: center;
+}
+
+.button-container {
+   flex: 0 auto;
+   margin: 1em;
+   padding: 8px 15px;
+   border: 2px solid #fafafa;
+}
+
+.button-container h3 {
+   color: #fafafa;
+}
+
+.button-info {
+   flex: 0 auto;
+   height: auto;
+   background-color: rgba(23, 23, 23, 0.25);
+   padding: 2em;
+   text-align: center;
+}
+
+.button-info * {
+   color: #fafafa;
+}
+
+
+/* Contact Module */
+
+.contact {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   background-color: #3b3b3b;
+}
+
+.contact h4,
+.contact p,
+.contact h3 {
+   color: #fafafa;
+}
+
+.contact>div {
+   flex: 1 150px;
+   margin: 30px;
+   text-align: center;
+}
+
+.contact-social {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.contact-social img {
+   flex: 1 auto;
+   height: 50px;
+}
+
+
+/* Events Module */
+
+.events {
+   display: flex;
+   flex-flow: row nowrap;
+   background-color: #171717;
+}
+
+.events h2,
+.events h3,
+.events h4,
+.events p {
+   color: #f7f7f7;
+}
+
+.events-left {
+   flex: 1 0 50px;
+   background: #fafafa url("../img/audio.jpg") right center/cover;
+   color: #f7f7f7;
+   text-align: right;
+   padding: 30px;
+}
+
+.events-right {
+   flex: 1 0 200px;
+   padding: 15px;
+}
+
+.events-right-item {
+   margin-bottom: 30px;
+}
+
+
+/* Events Module */
+
+.philosophy {
+   padding: 3.157em;
+   background-color: #FAFAFA;
+}
+
+.philosophy h2,
+.philosophy p {
+   color: #171717;
+}
+
+.philosophy-tag h2 {
+   display: inline;
+   vertical-align: -50%;
+}
+
+.philosophy-tag img {
+   height: 5.61em;
+   display: inline;
+   vertical-align: middle;
+}
+
+.philosophy-tag span {
+   white-space: nowrap;
+}
+
+.philosophy-text {
+   margin: 2em 0;
+   width: 66%;
+   line-height: 1.777em;
+}
+
+
+/* Drink Item Module */
+
+.drink-item {
+   margin: .7rem;
+   flex: 1 40%;
+   min-width: 300px;
+}
+
+.drink-item>p {
+   margin: 0 1.333rem;
+}
+
+.drink-item-namebox {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+/* Menu Module */
+
+.menu {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+
+/* Menu Module */
+
+.contactform {}
+
+.contactform li {
+   margin: 1em;
+   display: flex;
+   justify-content: center;
+}
+
+.contactform li * {
+   flex: 1 100px;
+}
+
+.contactform label {
+   text-align: right;
+   font-size: 1.777rem;
+   font-weight: 300;
+   margin: 0 1em;
+}
+
+.contactform input,
+.contactform textarea {
+   flex: 3 100px;
+   background-color: rgba(0, 0, 0, 0.15);
+   border: none;
+   font-size: 1.777rem;
+   font-weight: 300;
+}
+
+.contactform textarea {
+   height: 4em;
+}
+
+
+/*========================================*/
+
+
+/*Media Queries===========================*/
+
+@media screen and (max-width: 500px) {
+   html {
+      font-size: 10px;
+   }
+   header {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 9rem
+   }
+   .nav li {
+      font-size: 1.777rem;
+   }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+   html {
+      font-size: 12px;
+   }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+   html {
+      font-size: 14px;
+   }
+}
