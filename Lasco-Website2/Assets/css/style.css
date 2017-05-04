@@ -298,6 +298,11 @@ footer h4 {
    margin-right: .5rem;
 }
 
+.drink-divide {
+   margin-top: 2em;
+   flex: 2 80%;
+}
+
 
 /* Menu Module */
 
