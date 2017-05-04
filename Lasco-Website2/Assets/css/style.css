@@ -314,7 +314,9 @@ footer h4 {
 
 /* Menu Module */
 
-.contactform {}
+.contactform {
+   min-width: 36rem;
+}
 
 .contactform li {
    margin: 1em;
@@ -322,11 +324,8 @@ footer h4 {
    justify-content: center;
 }
 
-.contactform li * {
-   flex: 1 100px;
-}
-
 .contactform label {
+   flex: 0 0 11rem;
    text-align: right;
    font-size: 1.777rem;
    font-weight: 300;
