@@ -1,0 +1,272 @@
+/* DO NOT EDIT */
+/* CSS */
+body {
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #666666;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", sans-serif;
+  color: #2E3133;
+}
+
+h1 {
+  font-size: 3.375em;
+  line-height: 1em;
+  color: #191919;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+h5 {
+  font-size: 0.667em;
+  line-height: 0.75rem;
+}
+
+h6 {
+  font-size: 0.444em;
+  line-height: 0.5rem;
+}
+
+.container {
+  background-color: #dadada;
+}
+/* End of DO NOT EDIT */
+
+
+/* Images */
+* {
+   box-sizing: border-box;
+}
+img {
+   max-width: 100%;
+/*   Hint: find a way to make that the image does not expand more than the width of its container */
+}
+.logo {
+   margin: 8px;
+   width: 100px;
+   flex: 0 100px;
+}
+.container {
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+.navigation {
+   background-color: #151515;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+}
+.nav {
+   display: flex;
+   flex: 0 auto;
+   align-items: center;
+}
+.nav ul {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+}
+.nav ul li {
+   flex: 0 auto;
+   margin: 12px;
+}
+
+.nav li a {
+   text-decoration: none;
+   color: white;
+   padding: 10px;
+}
+
+.nav li a:hover {
+   background-color: white;
+   color: black;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.content-with-image-component {
+   display: flex;
+   flex-flow: row nowrap;
+   background-color: #00d9d9;
+   align-items: center;
+}
+.graphic {
+   flex: 1 auto;
+}
+.description {
+   flex 1 200px;
+}
+body>.container>.content {
+   width: 900px;
+   background-color: white;
+   margin: 20px auto;
+   display: flex;
+   flex-flow: row nowrap;
+}
+.description {
+   text-align: center;
+   color: white;
+}
+.description h1 {
+   color: white;
+}
+.button {
+   text-decoration: none;
+   color: grey;
+   background-color: white;
+   padding: 15px;
+}
+.description p {
+   margin: 30px;
+}
+
+.faq-component-container .title {
+   background-color: #adadad;
+   padding: 12px;
+}
+.faq-component-container .content {
+   margin: 12px;
+   overflow: hidden;
+   
+}
+.faq-component-container {
+   background-color: #f2f2f2;
+   padding-bottom: 12px;
+   margin-bottom: 30px;
+}
+.title h3 {
+   margin: 0;
+}
+.faq-component-container .content a {
+   float: right;
+   text-decoration: none;
+   color: white;
+   background-color: #2E3133;
+   padding: 8px;
+}
+.main-content {
+   flex: 1 400px;
+   padding: 15px;
+}
+.right-rail {
+   flex: 0 180px;
+   background-color: grey;
+   text-align: center;
+}
+.right-rail h3 {
+   color: white;
+}
+.image-gallery-component ul {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   padding: 0px;
+}
+.image-gallery-component ul li {
+   flex: 1 100px;
+   margin: 10px 10px 0;
+}
+.footer-logo {
+   width: 100px;
+   flex: 0 100px;
+}
+.footer-nav {
+   flex: 0 100px;
+   margin: 10px;
+}
+.footer-nav h5 {
+   text-align: right;
+}
+.footer-nav ul {
+   display: flex;
+   flex-flow: row nowrap;
+}
+.footer-nav ul li {
+   margin: 10px;
+}
+.copyright {
+   flex: 1 100%;
+}
+.footer {
+   display: flex;
+   flex-flow: row wrap;
+   background-color: white;
+   border-top: 2px solid black;
+   justify-content: space-between;
+   text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1090px){
+   .graphic {
+      order: 2;
+   }
+   .content-with-image-component {
+      flex-flow: column nowrap;
+   }
+   .image-gallery-component ul {
+      flex-flow: row nowrap;
+   }
+   .image-gallery-component ul li {
+      flex: 1 100px;
+   }
+   body>.container>.content {
+      flex-flow: column nowrap;
+      width: 95%;
+   }
+   
+}
+
+@media screen and (max-width: 640px){
+   .graphic {
+      order: 2;
+   }
+   .content-with-image-component {
+      flex-flow: column nowrap;
+   }
+   .image-gallery-component ul {
+      flex-flow: column nowrap;
+   }
+   body>.container>.content {
+      flex-flow: column nowrap;
+      width: 95%;
+   }
+   .navigation {
+      flex-flow: column;
+      align-items: center;
+   }
+   .nav ul {
+      flex-flow: column nowrap;
+      padding: 0;
+   }
+   .nav ul li {
+      flex: 0 auto;
+      margin: 5px;
+   }
+   .nav li a {
+      padding: 5px 10px;
+   }
+}
